@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#content {
+  width: 750px;        
+  display: flex;
+  flex-direction: column;  
+     
+}
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+#header{
+    border: 2px solid red;
+    width: 750px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-links{
+    border: 2px solid yellow;
+    padding-left: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+.right-links{
+    display: flex;
+    gap: 10px;
+}
+#theme-toggle{
+    border: none;
+    background: none;
+}
+.hidden{
+    display: none;
+}
+#home img{
+    width: auto;
+    height: 60px;
+    border: 2px solid black;
+}
+#home, #projects, #about{
+    margin-left: 10px;
+}
