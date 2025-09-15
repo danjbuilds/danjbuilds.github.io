@@ -4,78 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 <body>
-    <div id="content">
-        
+    <div id="portfolio">
         <div id="header">
-            <ul class="left-links">
-                <li><a href="#home">home</a></li>
-                <li><a href="#projects">project</a></li>
-                <li><a href="#about-me">about me</a></li>
-            </ul>
-            <ul class="right-links">
-                <a href="https://github.com/danjbuilds" target="_blank" rel="noopener no-referrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-
-                <a href="" target="_blank" rel="noopener no-referrer" aria-label="GitHub"><i class="fa-brands fa-youtube"></i></a>
+            <div class="site-title">
+            <a href="dan">DAN JACOB</a>
+            </div>
+            <div class="left-links">
+                <a href="">About</a>
+                <a href="">Projects</a>
                 <button id="theme-toggle" aria-label="light and dark mode">
-                <i class="fa-regular fa-moon"></i>
-            </button>
-            
-            </ul>
-        
-            
+                <i class="fa-regular fa-moon"></i></button>
+            </div>
+        </div>
+    <!-- home -->
+        <div id="dan">
+            <div class="circle">
+                <img src="source/Screenshot_2025-09-15_19-59-13.png" alt="">
+            </div>
+
+            <div class="dan-left">
+                <h2>Hey, I'm Dan Jacob Pasuengos. Im a computer Engineer whose into Iot and Embedded systems.</h2>
+                <ul class="links">
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+             </div>
+        </div>
+       
+    <!-- projects -->
+        <div id="projects">
+            <p class="title-project">PROJECTS</p>
+
+            <h2>Laura Link-32 Communication Device</h2>
+            <div class="proj">
+                <div class="proj-img">
+                    <img src="source/projimg/lauralink32.jpg" alt="">
+                </div>
+                <div class="project-description">
+                    <p>Design and Development of Ad-Hoc Communication Device for Off-Grid and Disaster- 
+                    Resilient Network (Undergrad Thesis). Built a LoRa-based off-grid messaging system using ESP32. Hosted a web chat interface accessible via smartphones without internet. Technologies: ESP32, LoRa, HTML/CSS/JS, Arduino IDE </p>
+                </div>
+                
+            </div>
+             <h2>Low-Cost Home Automation System (IoT)</h2>
+            <div class="proj">
+               
+                <div class="proj-img">
+                    <img src="" alt="">
+                </div>
+                <div class="project-desciprtion">
+                    <ul>
+                        <li>Created a Wi-Fi based smart home prototype using ESP32 </li>
+                        <li>Enabled wireless control of appliances through a custom GUI </li>
+                        <li>Applied real-time embedded programming and wireless control logic </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>ESP32-based Penetration Testing Tools</h2>
+            <div class="proj">
+                <div class="proj-img">
+                    <img src="" alt="">
+                </div>
+                <div class="project-desciprtion">
+                    <ul>
+                        <li>Developed custom hardware prototypes using ESP32 for Wi-Fi and network security testing </li>
+                        <li>Packet sniffing, deauthentication, and network scanning features for ethical pentesting use</li>
+                        <li> Enhanced understanding of wireless vulnerabilities and secure communication protocols</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Remote-Controlled Boats Hobby</h2>
+            <div class="proj">
+                <div class="proj-img">
+                    <img src="" alt="">
+                </div>
+                <div class="project-desciprtion">
+                    <ul>
+                        <li>Designed and built RC boats with embedded electronics and wireless control </li>
+                        <li>Integrated motor drivers, sensors, and microcontrollers </li>
+                        <li> Gained practical experience in mechatronics, circuit troubleshooting, and system 
+                        integration </li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
 
-        <section id="home">
-        <img src="source/coding-horror-logo-transparency.png" alt="Profile Picture">
-        <h2>Dan J. Pasuengos</h2>
-        <p>Computer Engineer | Embedded Systems | IoT Enthusiast</p>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="hidden">
-            <h2>Projects</h2>
 
-            <div>
-            <h3>Ad-Hoc Communication Device</h3>
-            <p>LoRa-based off-grid messaging system using ESP32 with a web chat interface.</p>
-            <a href="https://github.com/danjbuilds/project1" target="_blank">View on GitHub</a>
-            </div>
 
-            <div>
-            <h3>Home Automation System</h3>
-            <p>Wi-Fi based smart home prototype using ESP32 for wireless appliance control.</p>
-            <a href="https://github.com/danjbuilds/project2" target="_blank">View on GitHub</a>
-            </div>
+    <!-- about -->
+        <div id="about">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium impedit autem sint illum dolore voluptatem adipisci similique temporibus quam, consequatur veritatis, consectetur vitae nulla rem est deleniti saepe quos? Consequuntur.</p>
 
-            <div>
-            <h3>ESP32 Pentesting Tools</h3>
-            <p>Custom ESP32 hardware for ethical Wi-Fi and network security testing.</p>
-            <a href="https://github.com/danjbuilds/project3" target="_blank">View on GitHub</a>
-            </div>
-        </section>
+            <h3>Education</h3>
+            <h4>Bachelor of Science in Computer Engineering</h4>
+            <p>Catanduanes State University at Virac, Catanduanes | 2021 – 2025</p>
+            <ul>
+                <li><p>Built a strong foundation in computer systems, electronics, and networking with focus on hardware design and embedded systems </p></li>
+                <li><p>Relevant Coursework: Digital Logic Design, Computer Architecture, Microcontrollers, Data Communications and Networking, Embedded Systems, Electronics and Circuit Design, 
+                Operating Systems, Technical Support </p> </li>
+            </ul>
 
-        <!-- About Me Section -->
-        <section id="about" class="hidden">
-            <h2>About Me</h2>
-            <p>B.S. Computer Engineering, Catanduanes State University. IT Support Intern, Hytec Inc. Skilled in embedded systems, networking, and IoT development.</p>
-            <p><a href="resume.pdf" target="_blank">Download Resume</a></p>
-        </section>
+            <h3>Eligibility</h3>
+            <p>Civil Service Professional Eligibility – Passed, 2024 </p>
 
-        <!-- Footer -->
-        <!-- <footer>
-            <p>© 2025 Dan J. Pasuengos</p>
+            <h3>Experience</h3>
+
+            <h4>IT Support Intern</h4>
+            <p>HYTEC INC. – Novaliches, Quezon City | June 10 – July 26, 2024 (317 hours) </p>
+            <ul>
+                <li><p>Diagnosed and repaired hardware/software issues </p></li>
+                <li><p>Assisted in both field and office tech support tasks </p></li>
+                <li><p>Performed networking-related work in the company </p></li>
+            </ul>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Computer hardware/software troubleshooting </li>
+                <li>Network setup (TCP/IP, LAN/WAN)</li>
+                <li>Operating Systems: Windows, Linux </li>
+                <li>Programming: Python, C, JavaScript(HTML, CSS) </li>
+                <li>Microcontrollers: ESP32, Arduino, IoT </li>
+                <li>3D Design: Blender, AutoCAD </li>
+                <li>Electronics Prototyping: Soldering, PCB design assembly, circuit testing. </li>
+            </ul>
+
+            
+            
         
-        </footer> -->
 
+
+        
+
+
+        </div>
     </div>
-        
+
+   
+
+
+
+
+
+    
 </body>
 </html>
