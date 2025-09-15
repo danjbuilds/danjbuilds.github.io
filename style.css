@@ -1,6 +1,8 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: #161b22;
+    color: #ecf2f8;
 }
 #content {
   width: 750px;        
