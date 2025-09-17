@@ -3,49 +3,66 @@ body{
     flex-direction: column;
     align-items: center;
     /* background-color: #0c0f11; */
-    font-family: "system-ui", Roboto, "Helvetica Neue", sans-serif;
-    background-color: #0c0f11;
-    color: #eef5fc;
+    /* font-family: "system-ui", Roboto, "Helvetica Neue", sans-serif; */
+    font-family: Figtree, sans-serif; 
+   
+    
 
 }
 #portfolio{
     padding: 15px;
     margin-top: 40px;
     max-width: 700px;
-    border: 2px solid red;
-  
 }
 #header{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
-#header a{
+.site-title a{
     text-decoration: none;
     color: inherit;
 }
-#header .site-title{
-    font-weight: 700;
+.site-title{
     text-align: center;
-    font-family: "system-ui", Roboto, "Helvetica Neue", sans-serif;
-    letter-spacing: 0.1em;
-    color: rgb(168, 173, 178);
-    font-size: 1.15rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    color: rgb(28 28 30 / 75%);  
+    cursor: pointer;    
 }
-#header .left-links{
-    border: 1px solid yellow;
+.site-title:hover{
+    color: black;
+}
+.left-links {
     display: flex;
     gap: 20px;
-    font-size: 18px;
-    font-family: Helvetica Neue, sans-serif;
-    color: rgb(168, 173, 178);   
+    font-size: 15px;
+    font-family: Figtree, sans-serif; 
+    padding-top: 6px;
 }
-#header button{
+
+.left-links a {
+    color: rgb(28 28 30 / 75%);
+    text-decoration: none; 
+    position: relative;    
+    padding-bottom: 3px;  
+}
+
+.left-links a:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 6px; 
+}
+
+#theme-toggle{
     background: none; 
     border: none;      
     color: inherit;     
     padding: 0;         
     font: inherit;      
     cursor: pointer;     
+    color: rgb(28 28 30 / 75%);
+    margin-left: auto;
 }
 #dan ul li{
     list-style: none;
@@ -53,10 +70,10 @@ body{
 #dan a{
     text-decoration: none;
     padding: 0;
-    color: rgb(168, 173, 178);   
+     
 }    
 #dan{
-    border: 1px solid green;
+  
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -65,11 +82,11 @@ body{
 
 }
 #dan img{
-    border: 1px solid black;
+   
     border-radius: 
 }
 #dan .dan-left{
-    border: 1px solid yellow;
+  
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +108,6 @@ body{
     padding-bottom: 25px;
 }
 #projects h2{
-    color: #eef5fc;
     font-family: Helvetica Neue, sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -101,10 +117,10 @@ body{
     font-weight: 500;
 }
 .proj-img {
-  width: 100%;            /* fill container */
-  max-width: 300px;       /* limit size */
+  width: 100%;            
+  max-width: 300px;       
   min-width: 200px;
-  aspect-ratio: 4 / 3;    /* always 4:3 ratio */
+  aspect-ratio: 4 / 3;    
   overflow: hidden;
 }
 
@@ -117,11 +133,9 @@ body{
     display: flex;
 }
 .proj .project-description{
-    border: 1px solid yellow;
     box-sizing: border-box;
     max-width: 400px;
-    padding-left: 15px;
-   
+    padding-left: 15px;   
 }
 
 
