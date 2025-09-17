@@ -87,6 +87,8 @@ body{
     #dan{
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0;
+        margin-top: 30px;
         
     }
 }
@@ -106,7 +108,11 @@ body{
     font-family: Figtree, sans-serif; 
     font-size: 15px;
 }
-
+/* @media (max-width: 600px) {
+    .dan-left{
+       gap: 0;
+    }
+} */
 
 
 .profile{
@@ -124,12 +130,7 @@ body{
     object-fit: cover; /* makes image fill container, keeps ratio, crops excess */
     
 }
-@media (max-width: 600px) {
-    .profile{
-        padding-top: 0;
-        margin-bottom: 0;
-    }
-}
+
 
 .title-project{
    font-family: 'oswald', sans-serif;
