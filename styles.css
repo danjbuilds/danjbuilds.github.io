@@ -148,29 +148,19 @@ body{
     border-color: rgba(28, 28, 30, 0.135);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* subtle shadow */
 }
+
+
+
 @media (max-width: 600px){
     .project{
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         border-color: rgba(28, 28, 30, 0.135);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* subtle shadow */
-      
-
-    }
-      .proj-img {
-        width: 100%;              /* let it fill the container */
-        max-width: 300px;         /* don’t get too wide */
-        aspect-ratio: 4 / 3;      /* keeps nice proportions */
-        overflow: hidden;
-        margin-bottom: 15px;
-        border-radius: 4px;
-    }
-    .proj-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;        /* avoids stretching */
     }
 }
+
 
 .proj-img{
     max-width: 200px;      /* fixed width */
@@ -220,12 +210,47 @@ body{
     margin: 0;
     padding-left: 10px;
     font-size: 16px;
-    font-weight: 200;
+    ;
 }
 .proj-descrip{
     margin-top: 10px;
     padding-left: 10px;
     font-size: 14px;
+    font-weight: 200
 }
+
+.proj-title-mobile{
+    display: none
+}
+@media (max-width: 600px){
+    .ribbon{
+       display: none;
+    }
+    .proj-title{
+        display: none;
+    }
+    .proj-title-mobile{
+        display: block;
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: rgba(51, 51, 51, 1);
+        font-size: 16px;
+        
+    }
+    .proj-img {
+        width: 100%;              /* let it fill the container */
+        max-width: 300px;         /* don’t get too wide */
+        aspect-ratio: 4 / 3;      /* keeps nice proportions */
+        overflow: hidden;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        margin: 0;
+    }
+    .proj-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;        /* avoids stretching */
+    }
+}
+
 
 
