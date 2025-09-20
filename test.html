@@ -9,25 +9,45 @@
 
 </head>
 <body>
-    <div class="project">
-        <div class="proj-img">
-            <img src="source/projimg/lauralink32.jpg" alt="">
-        </div>
+        <div id="projects">
+            <p class="title-project">Projects</p>
 
-        <div class="proj-content">
-            <div class="project-header">
-                <div class="ribbon">
-                    <span class="month">SEP</span>
-                    <span class="day">20</span>
-                </div>
-                <p class="proj-title">Laura Link-32 Communication Device</p>
+            <div class="project">
+            <div class="proj-img">
+                <img src="source/projimg/lauralink32.jpg" alt="">
             </div>
 
-            <p class="proj-descrip">
+            <div class="proj-content">
+                <div class="project-header">
+                <p class="proj-title">Laura Link-32 Communication Device</p>
+                <p class="proj-date">Undergrad Thesis (AY ’24–’25) – Prototype</p>
+                </div>
+
+                <p class="proj-descrip">
                 An ESP32 + LoRa powered off-grid communication device with a smartphone-accessible chat interface for disaster resilience.
-            </p>
+                </p>
+
+                <!-- hidden section -->
+                <div class="proj-extra">
+                <p><strong>Full Info:</strong></p>
+                <ul>
+                    <li>Based on ESP32 + LoRa RA-02 module</li>
+                    <li>Supports off-grid messaging for disaster resilience</li>
+                    <li>Prototype version (2025)</li>
+                    <li>Mobile-first web interface hosted by ESP32</li>
+                </ul>
+                </div>
+            </div>
+            </div>
         </div>
-    </div>
+
+        <script>
+            document.querySelectorAll(".project").forEach(card => {
+            card.addEventListener("click", () => {
+                card.classList.toggle("open");
+            });
+            });
+        </script>
 
   
             
