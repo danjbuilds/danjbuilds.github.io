@@ -139,9 +139,14 @@ body{
     margin-bottom: 30px;
     padding: 10px;
     background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    
     font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+}
+.project:hover{
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .proj-img {
@@ -163,23 +168,35 @@ body{
 }
 
 .project-header {
+    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    margin-bottom: 6px;
-}
-
-.proj-title {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    flex-direction: column;
     margin: 0;
-    color: #333;
+    padding: 0;
+    
+}
+.proj-title {
+    font-size: 16px;
+    margin: 0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+.proj-date{
+    box-sizing: border-box;
+    align-self: flex-end;
+    font-size: 10px; color: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;
+
 }
 
 .proj-descrip {
+    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 8px;
-    font-size: 14px;
-    color: #555;
+    font-size: 13px;
+    color: #000000;
 }
 @media (max-width: 600px){
     .project {
