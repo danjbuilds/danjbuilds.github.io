@@ -83,6 +83,7 @@ body{
     margin: 60px 0 80px;
    
 }
+
 @media (max-width: 600px) {
     #dan{
         flex-wrap: wrap;
@@ -131,134 +132,81 @@ body{
    padding-top: 15px;
    margin-top: 0;
 }
-.project{
-    box-sizing: border-box;
+.project {
+    max-width: 800px;
     display: flex;
     align-items: flex-start;
-    color: rgba(51, 51, 51, 1);
-    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    cursor: pointer;
-    border: 1px solid transparent; /* reserve space */
-    border-radius: 8px;            /* rounded corners */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* smooth effect */
+    margin-bottom: 30px;
     padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.project:hover {
-    border-color: rgba(28, 28, 30, 0.135);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* subtle shadow */
+.proj-img {
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
 }
-
-
-
-@media (max-width: 600px){
-    .project{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        border: none;
-        border-color: rgba(28, 28, 30, 0.135);
-        border-radius: 0;
-        box-shadow: 
-            0 4px 10px rgba(0, 0, 0, 0.08),   /* bottom */
-            0 -4px 10px rgba(0, 0, 0, 0.08);  /* top */
-
-    
- 
-    }
-}
-
-
-.proj-img{
-    max-width: 200px;      /* fixed width */
-    max-height: 200px;     /* fixed height (square) */
-    overflow: hidden;  /* hides overflow parts of the image */
-    margin-right: 25px;
-    border-radius: 2px;
-}
-.proj-img img{
+.proj-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* makes image fill container, keeps ratio, crops excess */
-}
-.ribbon {
-  display: inline-block;
-  position: relative;
-  background: #ff7e5f;
-  color: #fff;
-  padding: 6px 10px;
-  font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  flex-basis: 0;
+    object-fit: cover;
 }
 
-.ribbon::before,
-.ribbon::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  border-style: solid;
-  border-width: 6px 8px 0 8px;
-  border-color: #c94b32 transparent transparent transparent;
-}
-.ribbon::before {
-  left: 0;
-}
-.ribbon::after {
-  right: 0;
+.proj-content {
+    flex: 1;
 }
 
-.proj-title .proj-descrip{
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.proj-title {
     font-family: 'Open Sans', Arial, sans-serif;
-    color: rgba(51, 51, 51, 1);
-}
-.proj-title{
+    font-size: 18px;
+    font-weight: 600;
     margin: 0;
-    padding-left: 10px;
-    font-size: 16px;
-    ;
-}
-.proj-descrip{
-    margin-top: 10px;
-    padding-left: 10px;
-    font-size: 14px;
-    font-weight: 200
+    color: #333;
 }
 
-.proj-title-mobile{
-    display: none
+.proj-descrip {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
 }
 @media (max-width: 600px){
-    .ribbon{
-        display: none;
-       
+    .project {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    .proj-title{
-        display: none;
-    }
-    .proj-title-mobile{
-        display: block;
-        font-family: 'Open Sans', Arial, sans-serif;
-        color: rgba(51, 51, 51, 1);
-        font-size: 16px;
-        
-    }
+
     .proj-img {
-        width: 100%;              /* let it fill the container */
-        max-width: 300px;         /* don’t get too wide */
-        aspect-ratio: 4 / 3;      /* keeps nice proportions */
-        overflow: hidden;
-        margin-bottom: 15px;
-        border-radius: 4px;
-        margin: 0;
-    }
-    .proj-img img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;        /* avoids stretching */
+        max-width: 320px;
+        aspect-ratio: 4/3;
+        margin: 0 0 12px 0;
+    }
+
+    .project-header {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .proj-title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .proj-descrip {
+        text-align: center;
+        padding: 0 10px;
     }
 }
-
-
-
