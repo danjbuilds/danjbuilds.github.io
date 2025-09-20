@@ -156,8 +156,15 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        border: none;
         border-color: rgba(28, 28, 30, 0.135);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* subtle shadow */
+        border-radius: 0;
+        box-shadow: 
+            0 4px 10px rgba(0, 0, 0, 0.08),   /* bottom */
+            0 -4px 10px rgba(0, 0, 0, 0.08);  /* top */
+
+    
+ 
     }
 }
 
@@ -224,7 +231,8 @@ body{
 }
 @media (max-width: 600px){
     .ribbon{
-       display: none;
+        display: none;
+       
     }
     .proj-title{
         display: none;
