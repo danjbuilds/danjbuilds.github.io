@@ -98,6 +98,9 @@ body{
     padding-left:15px;
     padding-right: 15px;
 }
+.dan-left h2{
+    font-size: 20px;
+}
 .links a{
     color: inherit;
 }
@@ -235,15 +238,39 @@ body{
         padding: 0 10px;
     }
 }
-#about{
+#about {
+    display: flex;
+    flex-direction: column;
+    
+}
+.about-content{
+   
     font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #333333;
-    padding: 0 30px;
     display: flex;
     flex-direction: column;
+    margin: 0 30px;
 }
 .title-about-me{
     align-self: center;
-    
+}
+.about-content h4{
+    margin: 25px 0;
+}
+.about-content p{
+    margin: 0;
+}
+
+#footer{
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    color: #333333e8;
+    border-top: 1px solid #3333331c;
+    justify-content: center;
+}
+#footer p{
+    padding-top: 5px;
+    margin: 0;
 }
